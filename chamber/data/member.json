@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Tech Innovators Ltd.",
+    "address": "123 Silicon Avenue, Accra",
+    "phone": "+233 24 567 8901",
+    "website": "https://techinnovators.com",
+    "image": "images/second-company.webp",
+    "membership": 3,
+    "industry": "Software Development"
+  },
+  {
+    "name": "Green Energy Solutions",
+    "address": "45 Eco Street, Accra",
+    "phone": "+233 20 987 6543",
+    "website": "https://greenenergy.com",
+    "image": "images/third-logo.png",
+    "membership": 2,
+    "industry": "Renewable Energy"
+  },
+  {
+    "name": "Accra Finance Hub",
+    "address": "10 Bank Lane, Accra",
+    "phone": "+233 50 123 4567",
+    "website": "https://accrafinance.com",
+    "image": "images/company-logo.png",
+    "membership": 1,
+    "industry": "Financial Services"
+  },
+  {
+    "name": "EduTech Ghana",
+    "address": "78 Knowledge Road, Accra",
+    "phone": "+233 27 555 6789",
+    "website": "https://edutechghana.com",
+    "image": "images/logo.jpg",
+    "membership": 3,
+    "industry": "Education Technology"
+  },
+  {
+    "name": "Global Trade Enterprises",
+    "address": "99 Commerce Street, Accra",
+    "phone": "+233 55 666 7777",
+    "website": "https://globaltrade.com",
+    "image": "images/logo-last.jpeg",
+    "membership": 2,
+    "industry": "Import & Export"
+  },
+  {
+    "name": "Health Plus Clinics",
+    "address": "88 Wellness Avenue, Accra",
+    "phone": "+233 30 111 2222",
+    "website": "https://healthplus.com",
+    "image": "images/logo-four.png",
+    "membership": 1,
+    "industry": "Healthcare"
+  }
+]
