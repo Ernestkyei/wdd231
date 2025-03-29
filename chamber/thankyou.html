@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Accra Chamber of Commerce connects businesses and professionals for networking and growth.">
+  <meta name="author" content="Ernest Nkansah Kyei">
+  <meta property="og:title" content="Accra Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.jpg">
+  <meta property="og:url" content="https://ernestkyei.github.io/wdd231/chamber/directory.html">
+  <meta property="og:description"
+    content="Join the Accra Chamber of Commerce and grow your business with networking opportunities.">
+
+  <title>Accra Chamber of Commerce</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/icon.jpg">
+  <!-- Font Awesome for Hamburger Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="Accra Chamber Logo">
+      <h1>Accra <br> Chamber of Commerce</h1>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <button class="bw-toggle" onclick="toggleBlackAndWhite()">🌓</button>
+  </header>
+
+
+
+
+  <main class="thank-you-container">
+    <div class="thank-you-card">
+      <div class="confirmation-icon">✓</div>
+      <div class="thank-you-header">
+        <h1>Thank You for Joining!</h1>
+        <p>Your membership application has been received</p>
+      </div>
+
+      <div class="form-details">
+        <div id="data-display">
+          <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+          <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+          <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+          <p><strong>Mobile Phone:</strong> <span id="displayPhone"></span></p>
+          <p><strong>Business Name:</strong> <span id="displayBusiness"></span></p>
+          <p><strong>Membership Level:</strong> <span id="displayMembership"></span></p>
+          <p><strong>Submitted On:</strong> <span id="displayTimestamp"></span></p>
+          <div id="error-message" style="display: none;">No form data received. Please try again.</div>
+
+        </div>
+        <div id="error-message" class="no-data-message" style="display: none;">
+          No form data received. Please ensure you submitted the form properly.
+        </div>
+      </div>
+
+      <a href="index.html" class="btn-primary">Return to Home</a>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Accra Chamber of Commerce</strong></p>
+        <p>10 Rue De La Paix, Accra, Mail 999</p>
+        <p>Email: <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a></p>
+        <p>Phone: +233 246 183286 </p>
+      </div>
+      <div class="social-media">
+        <a href="#" target="_blank"><img src="images/youtube.avif" alt="YouTube"></a>
+        <a href="#" target="_blank"><img src="images/twitter-icon.webp" alt="Twitter logo"></a>
+        <a href="#" target="_blank"><img src="images/linkedin-logo.webp" alt="LinkedIn logo"></a>
+      </div>
+      <div class="footer-bottom">
+        <p>WDD Class Project | Ernest Nkansah Kyei</p>
+        <p>&copy; 2025 Accra Chamber of Commerce</p>
+        <p id="lastModified">Last modification: </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+
+</body>
+
+</html>

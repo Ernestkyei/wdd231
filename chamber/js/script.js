@@ -134,3 +134,48 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error("Error fetching members:", error);
   }
 });
+
+
+// -------------------------display form information on the thank you page
+function displayClientData() {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // Extract data from query parameters
+  const clientInfo = {
+      firstname: urlParams.get('first-name'),
+      lastname: urlParams.get('last-name'),
+      email: urlParams.get('email'),
+      phone: urlParams.get('phone'),
+      business: urlParams.get('organization'),
+      membership: urlParams.get('membership'),
+      timestamp: urlParams.get('timestamp') || new Date().toLocaleString(), // Default to current date if missing
+  };
+
+  // Check if form data was received
+  const hasData = Object.values(clientInfo).some(value => value !== null && value !== "");
+
+  if (hasData) {
+      // Populate the page with client data
+      document.getElementById("displayFirstName").textContent = clientInfo.firstname;
+      document.getElementById("displayLastName").textContent = clientInfo.lastname;
+      document.getElementById("displayEmail").textContent = clientInfo.email;
+      document.getElementById("displayPhone").textContent = clientInfo.phone;
+      document.getElementById("displayBusiness").textContent = clientInfo.business;
+      document.getElementById("displayMembership").textContent = clientInfo.membership;
+      document.getElementById("displayTimestamp").textContent = clientInfo.timestamp;
+
+      // Show the data container
+      document.getElementById("data-display").style.display = "block";
+      document.getElementById("error-message").style.display = "none";
+  } else {
+      // Show the error message if no data is received
+      document.getElementById("data-display").style.display = "none";
+      document.getElementById("error-message").style.display = "block";
+  }
+}
+
+// Run script after the page loads
+document.addEventListener("DOMContentLoaded", displayClientData);
+
+
+

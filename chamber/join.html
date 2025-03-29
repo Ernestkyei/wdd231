@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Accra Chamber of Commerce connects businesses and professionals for networking and growth.">
+    <meta name="author" content="Ernest Nkansah Kyei">
+    <meta property="og:title" content="Accra Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:url" content="https://ernestkyei.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description"
+        content="Join the Accra Chamber of Commerce and grow your business with networking opportunities.">
+    <title>Accra Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.jpg">
+    <!-- Font Awesome for Hamburger Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <img src="images/logo.jpg" alt="Accra Chamber Logo">
+          <h1>Accra <br> Chamber of Commerce</h1>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>        
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </nav>
+        <button class="bw-toggle" onclick="toggleBlackAndWhite()">🌓</button>
+      </header>
+    
+      <main class="join-container">
+        <div class="join-card">
+            <div class="join-header">
+                <h2>Join Our Chamber</h2>
+                <p>Become part of our growing business community</p>
+            </div>
+
+            <form method="get" action="thankyou.html" id="membershipForm">
+              <div class="floating-label-group">
+                  <input type="text" id="first-name" name="first-name" class="form-control" placeholder=" " required autocomplete="given-name">
+                  <label class="floating-label" for="first-name">First Name</label>
+              </div>
+          
+              <div class="floating-label-group">
+                  <input type="text" id="last-name" name="last-name" class="form-control" placeholder=" " required autocomplete="family-name">
+                  <label class="floating-label" for="last-name">Last Name</label>
+              </div>
+          
+              <div class="form-group">
+                  <label for="organization-title" class="form-label">Organizational Title</label>
+                  <input type="text" id="organization-title" name="organization-title" class="form-control" 
+                         title="Title must be at least 7 characters and contain only letters, hyphens, and spaces." 
+                         pattern="[A-Za-z\-\s]{7,}" required autocomplete="organization-title">
+              </div>
+          
+              <div class="floating-label-group">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="yourname@example.com" required autocomplete="email">
+                  <label class="floating-label" for="email">Email Address</label>
+              </div>
+          
+              <div class="floating-label-group">
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder=" " required 
+                         pattern="^\+?[0-9\s\-]{7,15}$" 
+                         title="Enter a valid phone number (7-15 digits, may include +, -, and spaces)" 
+                         autocomplete="tel">
+                  <label class="floating-label" for="phone">Mobile Phone</label>
+              </div>
+          
+              <div class="floating-label-group">
+                  <input type="text" id="organization" name="organization" class="form-control" placeholder=" " required autocomplete="organization">
+                  <label class="floating-label" for="organization">Business/Organization Name</label>
+              </div>
+          
+              <div class="form-group">
+                  <label for="membership" class="form-label">Membership Level</label>
+                  <select id="membership" name="membership" class="form-control" required>
+                      <option value="" disabled selected>Select membership level</option>
+                      <option value="NP">NP Membership (Non-Profit, Free)</option>
+                      <option value="Bronze">Bronze Membership</option>
+                      <option value="Silver">Silver Membership</option>
+                      <option value="Gold">Gold Membership</option>
+                  </select>
+              </div>
+          
+              <div class="form-group">
+                  <label for="description" class="form-label">Business/Organization Description</label>
+                  <textarea id="description" name="description" class="form-control" required></textarea>
+              </div>
+          
+              <!-- Hidden field to store form load timestamp -->
+              <input type="hidden" name="timestamp" id="timestamp">
+          
+              <button type="submit" class="btn-primary">Join Our Chamber</button>
+          </form>
+          
+          <script>
+              // Automatically set the timestamp when the form loads
+              document.getElementById("timestamp").value = new Date().toISOString();
+          </script>
+          
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+            <p><strong>Accra Chamber of Commerce</strong></p>
+            <p>10 Rue De La Paix, Accra, Mail 999</p>
+            <p>Email: <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a></p>
+            <p>Phone: +233 246 183286 </p>
+          </div>
+          <div class="social-media">
+            <a href="#" target="_blank"><img src="images/youtube.avif" alt="YouTube"></a>
+            <a href="#" target="_blank"><img src="images/twitter-icon.webp" alt="Twitter logo"></a>
+            <a href="#" target="_blank"><img src="images/linkedin-logo.webp" alt="LinkedIn logo"></a>
+          </div>
+          <div class="footer-bottom">
+            <p>WDD Class Project | Ernest Nkansah Kyei</p>
+            <p>&copy; 2025 Accra Chamber of Commerce</p>
+            <p id="lastModified">Last modification: </p>
+          </div>
+        </div>
+      </footer>
+    
+      <script src="js/script.js" defer> </script>
+     
+
+
+ 
+
+          
+    
+</body>
+</html>
