@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2 {
+    color: #4CAF50; /* Green */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    color: white;
+    margin: 0;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section Styles */
+#image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#recipe-image {
+    width: 100%;
+    max-width: 400px;  /* Limits the image to a max size */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* List styles */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    #recipe-image {
+        width: 100%;  /* Make image responsive */
+    }
+}
