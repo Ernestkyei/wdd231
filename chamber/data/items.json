@@ -1,0 +1,56 @@
+[
+ 
+  
+    {
+      "title": "Heritage Museum",
+      "image": "images/Heritage Museum.webp",
+      "address": "123 History Ave",
+      "description": "Explore cultural artifacts and stories from the past."
+    },
+    {
+      "title": "City Park",
+      "image": "images/City Park.webp",
+      "address": "456 Greenway Blvd",
+      "description": "Enjoy nature, trails, and family fun in the city's heart."
+    },
+    {
+      "title": "Local Market",
+      "image": "images/Local Market.webp",
+      "address": "789 Trade Street",
+      "description": "Buy fresh produce, handmade crafts, and souvenirs."
+    },
+    {
+      "title": "Art Gallery",
+      "image": "images/Art Gallery.webp",
+      "address": "321 Paint Ln",
+      "description": "Modern art exhibits from local and international artists."
+    },
+    {
+      "title": "Public Library",
+      "image": "images/Public Library.webp",
+      "address": "654 Knowledge Dr",
+      "description": "Books, tech, and resources for learning and research."
+    },
+    {
+      "title": "Waterfront",
+      "image": "images/Waterfront.webp",
+      "address": "987 River Rd",
+      "description": "Relax by the water and enjoy beautiful sunset views."
+    },
+    {
+      "title": "Tech Hub",
+      "image": "images/Tech Hub.webp",
+      "address": "258 Innovation St",
+      "description": "Center for entrepreneurship and emerging technology."
+    },
+    {
+      "title": "Civic Center",
+      "image": "images/Civic Center.webp",
+      "address": "147 Unity Square",
+      "description": "Host to events, meetings, and community services."
+    }
+  
+
+
+  ]
+  
